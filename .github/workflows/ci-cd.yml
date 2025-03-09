@@ -91,7 +91,7 @@ jobs:
           name: build-artifacts
           path: dist/
   
-      # ✅ Convert repository name to lowercase for GHCR
+      #Convert repository name to lowercase for GHCR
       - name: Convert Repository Name to Lowercase for GHCR
         run: echo "IMAGE_NAME=$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
   
